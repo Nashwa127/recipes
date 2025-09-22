@@ -4,7 +4,7 @@ const fs=require('fs');
 const path=require('path');
 
 const app=express();
-app.use(corss());
+app.use(cors());
 app.use(express.json());
 
 const filePath = path.join(__dirname,"data","recipe.json");
