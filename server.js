@@ -2,6 +2,7 @@ const express=require('express');
 const cors=require('cors');
 const fs=require('fs');
 const path=require('path');
+const PORT = 3000;
 
 const app=express();
 app.use(cors());
@@ -36,3 +37,5 @@ fs.readFile(filePath,"utf8",(err,data)=>{
     })
 })
 })
+
+app.listen(PORT, () => {console.log(`Listening on PORT 3000`)})
