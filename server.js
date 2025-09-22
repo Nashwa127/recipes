@@ -10,13 +10,13 @@ app.use(express.json());
 
 const filePath = path.join(__dirname,"data","recipe.json");
 
-app.get("/api/recipe.json",(req,res)=>{
+app.get("/api/recipe",(req,res)=>{
     fs.readFile(filePath,'utf8',(err,data)=>{
         res.json(JSON.parse(data || "[]"));
     })
 })
 
-app.post("/api/recipe.json",(req,res)=>{
+app.post("/api/recipes",(req,res)=>{
     if(!title||!ingredients||!instructions){
         res.status(400);
     }
