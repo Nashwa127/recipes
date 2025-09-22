@@ -16,7 +16,7 @@ app.get("/api/recipe",(req,res)=>{
     })
 })
 
-app.post("/api/recipes",(req,res)=>{
+app.post("/api/recipe",(req,res)=>{
     if(!title||!ingredients||!instructions){
         res.status(400);
     }
