@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": 1758527558108,
+    "title": "Pasta",
+    "ingredients": "Milk,pasta,water,cream,cheese,chiili flakes",
+    "instructions": "Boil the pasta, then make the sauce",
+    "cookTime": "45 minute",
+    "difficulty": "medium"
+  }
+]

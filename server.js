@@ -17,10 +17,10 @@ app.get("/api/recipe",(req,res)=>{
 })
 
 app.post("/api/recipe",(req,res)=>{
+    const {title,ingredients,instructions,cookTime}=req.body;
     if(!title||!ingredients||!instructions){
         res.status(400);
     }
-    const {title,ingredients,instructions,cookTime}=req.body;
     const newRecipe={
         id :Date.now(),
         title,
